@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #e4f4f4;
+}
+.box-principe {
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-position:cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 450px;
+    background: white;
+    border-radius: 8px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+.container-img{
+    background-image: url(./images/illustration-hero.svg); 
+    background-repeat: no-repeat;
+    background-position: cover; 
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 220px;
+    
+}
+.container-information {
+    text-align: center;
+    font-size: 11px;
+    border: 1px solid pink;
+}
+
+.info {
+    padding: 40px 40px 5px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+p {
+    color: #68686a;
+}
+.container-plano {
+    padding: 20px 40px;
+}
+.plano {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; 
+    padding: 10px 5px;
+    background-color: #eeeeeead;
+}
+.plano-music {
+    text-align: start;
+}
+h2 {
+    font-size: large;
+    margin-bottom: 5px;
+}
+.link {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+a {
+    color:hsl(228, 45%, 44%);
+}
+
+.container-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 10px 40px 40px 40px;
+    text-align: center;
+}
+.btn {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 15px 10px;
+    color: hsl(225, 100%, 94%);
+    font-weight: bold;
+    background-color: hsl(245, 75%, 52%);
+}
+
+.btn-cancel {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color:hsl(228, 45%, 44%);
+}
+.btn-cancel:hover {
+    color: black;
+}
+a:hover {
+    text-decoration-line: none;
+}
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 90%;
+        height:90%;
+    }
+}
